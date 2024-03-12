@@ -1,0 +1,122 @@
+.cart-wrapper{
+    padding: 1.6rem;
+}
+.cart-title{
+    font-weight: 300;
+    text-align: center;
+}
+.cart-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-button{
+    padding: .4rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.top-button[type="filled"]{
+    color:white;
+    background: black;
+    border:none;
+}
+.top-texts{
+    padding: 1.5rem;
+}
+.top-texts >span{
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0  .5rem;
+}
+.cart-bottom{
+    display:flex;
+    justify-content: space-between;
+}
+.cart-info{
+    flex:3;
+}
+.cart-product{
+    display:flex;
+    justify-content: space-between;
+    margin:1rem 0;
+}
+.cart-product-details{
+    flex:2;
+    display: flex;
+}
+
+.cart-product-details >img{
+    width: 20%;
+}
+.details{
+    padding: 1.7rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart-product-color{
+   display:flex;
+   align-items: center;
+}
+.cart-product-color >span{
+    width:30px;
+    height:30px;
+    background:red;
+    border-radius: 50%;
+    margin: 0 .2rem;
+}
+.cart-product-price{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-amount-container{
+    display:flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.product-amount-container >span{
+    font-size: 1.3rem;
+    margin: .5rem 0;
+}
+.product-amount-container > h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.cart-summary{
+    flex:1;
+    border: .1rem solid lightgray;
+    padding:.7rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    border-radius: .3rem; 
+}
+.cart-summary >h1{
+    margin-bottom:1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.summary-items{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.summary-items >p{
+    text-transform: uppercase;
+}
+.total{
+    font-weight: bold;
+}
+.check-out-btn{
+    padding:.7rem;
+    border:none;
+    outline:none;
+    background:teal;
+    color:white;
+    cursor:pointer;
+
+}

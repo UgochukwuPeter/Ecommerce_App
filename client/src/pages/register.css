@@ -1,0 +1,54 @@
+.register{
+    width:100vw;
+    height:100vh;
+    background:  url("https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706400000&semt=ais")no-repeat center;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-wrapper{
+    width:40%;
+    padding: 1.2rem;
+    background:white;
+    border-radius: .2rem;
+}
+.register-wrapper > h1{
+    font-weight: 300;
+    font-size:1.4rem;
+    margin:1.3rem  0;
+    text-transform: uppercase;
+}
+.register-wrapper > form{
+    display:flex;
+    flex-wrap: wrap;
+}
+.register-wrapper > form >input{
+    min-width: 40%;
+    flex: 1;
+    margin: 2rem .6rem 0 0;
+    padding:.6rem;
+    outline:none;
+}
+.register-wrapper >form >input:focus{
+    border: .1rem solid teal;
+}
+.register-wrapper >form >p{
+    font-size: .6rem;
+    margin: 1rem 0;
+}
+.register-wrapper  >form >button{
+    width:40%;
+    border:none;
+    padding: .9rem 1.5rem;
+    cursor:pointer;
+    background-color: teal;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.register-wrapper >form >button:hover{
+    background-color: inherit;
+    color:teal;
+    border:.1rem solid teal;
+}

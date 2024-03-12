@@ -1,0 +1,62 @@
+.login{
+    width:100vw;
+    height:100vh;
+    background:  url("https://www.jeffbullas.com/wp-content/uploads/2022/04/The-10-Best-B2B-eCommerce-Websites-For-Business-Growth.jpg")no-repeat center;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-wrapper{
+    width:25%;
+    padding: 1.2rem;
+    background:white;
+    border-radius: .2rem;
+}
+.login-wrapper > h1{
+    font-weight: 300;
+    font-size:1.4rem;
+    margin:1.3rem  0;
+    text-transform: uppercase;
+}
+.login-wrapper > form{
+    display:flex;
+    flex-direction: column;
+}
+.login-wrapper > form >input{
+    min-width: 40%;
+    flex: 1;
+    margin: 1rem 0;
+    padding:.6rem;
+    outline:none;
+}
+.login-wrapper >form >input:focus{
+    border: .1rem solid teal;
+}
+.login-wrapper  >form >button{
+    width:40%;
+    border:none;
+    padding: .9rem 1.5rem;
+    cursor:pointer;
+    background-color: teal;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin: 1rem 0;
+}
+.login-wrapper >form >button:hover{
+    background-color: inherit;
+    color:teal;
+    border:.1rem solid teal;
+}
+.login-contain{
+    display:flex;
+    flex-direction: column;
+}
+.login-contain > span{
+    text-transform: uppercase;
+    margin: .3rem 0;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}

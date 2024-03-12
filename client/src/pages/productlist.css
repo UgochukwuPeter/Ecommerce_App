@@ -1,0 +1,20 @@
+
+.productlist >  h1{
+    margin:1.3rem;
+}
+.filter-container{
+    display:flex;
+    justify-content: space-between;
+}
+.filter{
+    margin:1.3rem;
+}
+.filter >span{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right:1.3rem;
+}
+select{
+    padding:.7rem;
+    margin-right:1.3rem;
+}

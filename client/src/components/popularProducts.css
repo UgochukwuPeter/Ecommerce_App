@@ -1,0 +1,7 @@
+.popular-products{
+    display:flex;
+    padding: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}

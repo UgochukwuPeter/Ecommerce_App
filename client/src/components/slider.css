@@ -1,0 +1,57 @@
+.slider{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+}
+.slider-control{
+    width:100%;
+    display:block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 20% auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.slider-control > button{
+    padding:.7rem;
+    color:white;
+    border-radius:50%;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    color: #000;
+}
+.fade {
+    animation: fade 1s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .shop-btn{
+    position:absolute;
+    bottom:7rem;
+    right:37%;
+    padding:.7rem 1rem;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: inherit;
+    border:2px solid #000;
+  }
+  @media(max-width:480px){
+    .shop-btn{
+      padding:.5rem 1rem;
+      font-size: 1rem;
+    }
+  }

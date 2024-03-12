@@ -1,0 +1,18 @@
+.announcement{
+    height:2rem;
+    background:teal;
+    color:white;
+    padding:.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.announcement > span{
+    text-transform: capitalize;
+}
+@media(max-width:480px){
+    .announcement >span{
+        font-size: .8rem;
+    }
+}
