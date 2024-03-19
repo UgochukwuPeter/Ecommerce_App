@@ -26,16 +26,19 @@ export const categories =[
         id: 1,
         name: 'Shirt Style',
         image: './images/mens-stylish-shirt-blue-11530974563evx7u7sqbf.png',
+        cat: 'shirts'
       },
        {
         id: 2,
         name: 'Loungeware Love',
         image: './images/171-1719569_vintage-inspired-fashion-dresses-sunglasses-skirts-dress-h1d.png',
+        cat: 'women'
       },
       {
         id: 3,
         name: 'Sports Wear',
         image: './images/Sports-Wear-PNG-Clipart.png',
+        cat: 'men'
       },
 ];
 export const regularProducts =[
