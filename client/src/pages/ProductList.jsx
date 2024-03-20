@@ -4,8 +4,22 @@ import Navbar from '../components/Navbar';
 import Footer  from '../components/Footer';
 import PopularProducts from '../components/PopularProducts';
 import NewsLetter from '../components/NewsLetter';
-
+import {useLocation} from 'react-router-dom';
+import { useState } from 'react';
 const ProductList = () => {
+    const location = useLocation()
+    const cat  =  location.pathname.split("/")[2];
+
+    const [filters, setFilters] = useState({});
+    const [sort, setSort]  = useState('newest')
+
+    const handleFilters =(e)=>{
+        const value = e.target.value;
+        setFilters({
+            ...filters,
+            [e.target.name]:value,
+        });
+    }
   return (
     <div className='productlist'>
         <Navbar/>
@@ -14,8 +28,8 @@ const ProductList = () => {
         <div className="filter-container">
         <div className='filter'>
             <span>Filter Products</span>
-            <select>
-                <option disabled selected>Color</option>
+            <select name='color' onChange={handleFilters}>
+                <option disabled >Color</option>
                 <option>White</option>
                 <option>Black</option>
                 <option>Red</option>
@@ -23,8 +37,8 @@ const ProductList = () => {
                 <option>Yellow</option>
                 <option>Green</option>
             </select>
-            <select>
-                <option disabled selected>Size</option>
+            <select name='size' onChange={handleFilters}>
+                <option disabled >Size</option>
                 <option>XS</option>
                 <option>S</option>
                 <option>M</option>
@@ -35,14 +49,14 @@ const ProductList = () => {
         </div>
         <div className='filter'>
             <span>Sort  Products</span>
-            <select>
-                <option selected>Newest</option>
-                <option>Price (asc)</option>
-                <option>Price (desc)</option>
+            <select  onChange={e=>setSort(e.target.value)}>
+                <option value='newest' selected>Newest</option>
+                <option value='asc'>Price (asc)</option>
+                <option value='desc'>Price (desc)</option>
             </select>
         </div>
         </div>
-        <PopularProducts/>
+        <PopularProducts cat={cat} filters={filters} sort={sort}/>
         <NewsLetter/>
         <Footer/>
     </div>
