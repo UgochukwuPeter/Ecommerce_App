@@ -1,5 +1,5 @@
 import './popularProducts.css'
-import { regularProducts } from '../data'
+import { products, regularProducts } from '../data'
 import PopularProduct from './PopularProduct'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
@@ -28,12 +28,30 @@ const PopularProducts = ({cat,filters,sort}) => {
       ))
     );
   },[myProducts,cat,filters])
+
+  useEffect(()=>{
+    if(sort === "newest"){
+      setFilteredProducts(prev=>
+        [...prev].sort((a,b)=>a.createdAt - b.createdAt)
+      );
+    }else if(sort === "asc"){
+      setFilteredProducts(prev=>
+        [...prev].sort((a,b)=>a.price - b.price)
+      );
+    }else{
+      setFilteredProducts(prev=>
+        [...prev].sort((a,b)=>b.price - a.price)
+      );
+    }
+  },[sort])
   return (
     <div className='popular-products'>
         {
-            filteredProducts.map((item)=>(
+           cat ? filteredProducts.map((item)=>(
                 <PopularProduct item={item} key={item._id}/>
-            ))
+            )) : myProducts.map((item)=>(
+              <PopularProduct item={item} key={item._id}/>
+          ))
         }
         </div>
   )

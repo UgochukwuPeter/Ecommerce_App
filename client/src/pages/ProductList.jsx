@@ -24,18 +24,18 @@ const ProductList = () => {
     <div className='productlist'>
         <Navbar/>
         <Announcement/>
-        <h1>Dresses</h1>
+        <h1>{cat}</h1>
         <div className="filter-container">
         <div className='filter'>
             <span>Filter Products</span>
             <select name='color' onChange={handleFilters}>
                 <option disabled >Color</option>
-                <option>White</option>
-                <option>Black</option>
-                <option>Red</option>
-                <option>Blue</option>
-                <option>Yellow</option>
-                <option>Green</option>
+                <option>white</option>
+                <option>black</option>
+                <option>red</option>
+                <option>blue</option>
+                <option>yellow</option>
+                <option>green</option>
             </select>
             <select name='size' onChange={handleFilters}>
                 <option disabled >Size</option>
@@ -50,7 +50,7 @@ const ProductList = () => {
         <div className='filter'>
             <span>Sort  Products</span>
             <select  onChange={e=>setSort(e.target.value)}>
-                <option value='newest' selected>Newest</option>
+                <option value='newest'>Newest</option>
                 <option value='asc'>Price (asc)</option>
                 <option value='desc'>Price (desc)</option>
             </select>

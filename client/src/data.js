@@ -24,21 +24,21 @@ export const products =[
 export const categories =[
     {
         id: 1,
-        name: 'Shirt Style',
-        image: './images/mens-stylish-shirt-blue-11530974563evx7u7sqbf.png',
-        cat: 'shirts'
+        name: 'Designers Shoes',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSHUjiw9veCZ_dZ0qWLi-joOIDEJxDHbKUwWpkmHHAA&s',
+        cat: 'Shoes'
       },
        {
         id: 2,
-        name: 'Loungeware Love',
-        image: './images/171-1719569_vintage-inspired-fashion-dresses-sunglasses-skirts-dress-h1d.png',
-        cat: 'women'
+        name: 'Custom Fit Shirts',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm875GXWNw7jj8EuYu4LL85UUOdtyd-bz7grAe6SjJw&s',
+        cat: 'Shirts'
       },
       {
         id: 3,
-        name: 'Sports Wear',
-        image: './images/Sports-Wear-PNG-Clipart.png',
-        cat: 'men'
+        name: 'Designer Bags',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYkkqBDCJBtcyT9atYXgZ_Qv3ctGdBXk3f6v1HpH9mA&s',
+        cat: 'Bags'
       },
 ];
 export const regularProducts =[
